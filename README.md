@@ -1,6 +1,6 @@
 ![alt text](https://github.com/hamslices/Open-Source-Print-Controller/blob/main/img/banner-image.png?raw=true)
 
-### **An Open Invitation to Revolutionize Thermal Printing for the Maker Community**
+## **An Open Invitation to Revolutionize Thermal Printing for the Maker Community**
 
 **A Passion for Creation, A Vision for Open Source**
 
