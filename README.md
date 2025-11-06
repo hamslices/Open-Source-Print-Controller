@@ -14,7 +14,7 @@ This is a public proposal to any thermal print mechanism manufacturer, large or 
 
 **Project Vision: A Powerful and Accessible Controller**
 
-My vision is to create a robust and reliable controller board based on a powerful **STM32 microcontroller**, renowned for its performance and extensive development ecosystem. The board will be designed to support a wide range of print mechanisms, from **3-inch models suitable for ticketing to larger 8-inch formats** for full-page receipts or data logging. To ensure reliability and ease of use, the board will feature a streamlined and universally compatible **USB interface for data transfer only**. Power will be supplied via a standard DC input, allowing users to connect a common off-the-shelf power brick suitable for the chosen mechanism.
+My vision is to create a robust and reliable controller board based on a powerful **STM32 microcontroller**, renowned for its performance and extensive development ecosystem. The board will be designed to support a specific print mechanisms, from **3-inch models suitable for ticketing to larger 8-inch formats** for full-page receipts or data logging. To ensure reliability and ease of use, the board will feature a streamlined and universally compatible **USB interface for data transfer only**. Power will be supplied via a standard DC input, allowing users to connect a common off-the-shelf power brick suitable for the chosen mechanism.
 
 **What a Partnership Could Look Like**
 
