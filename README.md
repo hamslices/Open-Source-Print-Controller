@@ -1,106 +1,120 @@
+
 ## **Proposal: Seeking a Manufacturing Partner for an Open-Source Thermal Print Controller**
 
 ![alt text](https://github.com/hamslices/Open-Source-Print-Controller/blob/main/img/banner-image.png?raw=true)
 
 ### Executive Summary / TL;DR
 
-*   **The Project:** To create a fully open-source controller board (hardware, firmware, and software) for a commercial thermal print mechanism, based on a powerful STM32 microcontroller.
-*   **The Goal:** To make high-quality thermal printing accessible to the maker/hobbyist community, creating a new sales channel for a partner's print mechanism.
-*   **The Ask:** A partnership with a manufacturer to provide documentation, 1-2 engineering samples of a print mechanism, and a technical point of contact.
-*   **The Offer:** In return, I will design, document, and support the entire open-source project, effectively creating a new, well-supported pathway for your product to enter the maker market at no cost to you.
+*   **The Project:** To create a fully open-source reference design (KiCad schematics, PCB layout, and Firmware) for commercial-grade thermal print mechanisms.
+*   **The Goal:** To release these files to the public, allowing makers to integrate high-quality **Wide-Format (8-inch/A4)** printing into their own non-commercial desktop projects.
+*   **The Ask:** A partnership with a manufacturer to provide **technical documentation** and **authorization** to publish an open-source driver.
+*   **The Offer:** In return, I will create and maintain the open-source documentation and codebase, lowering the barrier to entry for your hardware.
 
 ---
 
-### **An Open Invitation to Revolutionize Thermal Printing for the Maker Community**
+### **An Open Invitation to Revolutionize Wide-Format Thermal Printing**
 
-I am a designer and maker with a fervent passion for the elegance and intricacy of thermal printing. My ambition is to channel this passion into a project that will empower thousands of creators by developing a fully open-source controller board for a commercially available thermal print mechanism.
+I am a designer and maker with a fervent passion for the elegance and utility of thermal printing. My ambition is to develop a universal, fully open-source controller board for a commercially available thermal print mechanism.
 
-This endeavor aims to bridge a significant gap in the open-source landscape. While many hobbyists possess the ingenuity to integrate thermal printing into their projects, the lack of an accessible, well-documented controller for professional-grade mechanisms remains a substantial barrier. An open-source solution would unlock a new realm of possibilities, enabling the seamless integration of high-quality printing into countless innovative projects.
+**The Problem:**
+While many hobbyists want to integrate thermal printing into their projects (medical prototypes, art installations, custom kiosks), the barrier to entry is high. Professional-grade mechanisms—especially **8-inch/A4 models**—lack accessible, well-documented controllers. This forces innovators to use bulky, expensive, or proprietary solutions for custom document printing.
 
-### **A Call for Collaboration**
+**The Solution:**
+An open-source hardware (OSH) project based on the robust **STM32** platform would unlock a new realm of possibilities, enabling the seamless integration of high-quality printing into countless innovative desktop applications.
 
-This is a public proposal to any thermal print mechanism manufacturer who recognizes the value and potential of the maker movement. If your company is interested in making one of your "off-the-shelf" print mechanisms the standard for a thriving open-source community, I want to hear from you. This collaboration would not only open a low-volume sales channel to a dedicated market but also position your brand at the forefront of innovation within the maker space.
+### **Proof of Capability: The "Lark" Prototype**
 
-### **Skills and Dedication**
+To demonstrate the technical feasibility of this project, I have already designed and prototyped a working controller board (codenamed **"Lark"**) specifically for the **Fujitsu 8-inch mechanism**.
 
-My background includes professional experience in design and a solid educational foundation from a university, with a focus on embedded systems and electronics. My skillset includes PCB design, firmware development in C/C++, and a passion for creating detailed, user-friendly documentation. This project represents a remarkable opportunity for me to not only expand my own skills but also to create something of lasting value for the open-source community.
+![The Lark Controller Prototype](https://github.com/hamslices/Open-Source-Print-Controller/blob/main/img/lark-prototype.png?raw=true)
+*Above: The "Lark" prototype board, a fully routed STM32-based controller designed for the Fujitsu FTP-68E series.*
 
-### **Project Vision: A Powerful and Accessible Controller**
+**Current Status:**
+This board represents a successful internal proof of concept. The design files and firmware are currently private. **I am actively seeking a manufacturing partner to join this initiative before the public launch.**
 
-My vision is to create a robust controller board based on a powerful **STM32 microcontroller**, renowned for its performance and development ecosystem. The board will be designed to support a specific print mechanism, from **3-inch models suitable for ticketing to larger 8-inch formats** for full-page receipts. To ensure reliability and ease of use, the board will feature a streamlined **USB interface for data transfer only**. Power will be supplied via a standard DC input, allowing users to connect a common off-the-shelf power brick suitable for the chosen mechanism.
+My goal is to release this project as a formal collaboration. By establishing a partnership first, we can ensure that the open-source community receives a fully authorized, accurate, and well-supported solution from day one.
 
-### **Targeted Print Mechanisms**
+### **Project Vision: A Scalable, Powerful Controller**
 
-To provide concrete examples of the types of mechanisms this project could support, I have compiled a wishlist of potential candidates. These models have been selected based on their features, form factor, and suitability for the hobbyist and prototyping market.
+My vision is to create a digital repository containing the schematics and code for a robust controller based on a powerful **STM32 microcontroller**.
 
-| Manufacturer | Model Series          |
-| :----------- | :-------------------- |
-| **SII (Seiko)**  | `CAPD247` / `CAPD347` |
-| **PRT**        | `PT2161P` / `PT1563P` |
-| **Fujitsu**    | `FTP-638MCL401`       |
-| **Fujitsu**    | `FTP-68EMCL001/101/112`|
+*   **Interface:** A streamlined **USB interface (CDC Class)** for universal compatibility with Windows, Linux, and Mac.
+*   **Power:** Standard DC input, allowing users to connect common off-the-shelf power bricks.
+*   **Documentation:** Comprehensive guides that abstract the complexity of raw datasheets, making integration easy for developers.
+*   **Open Source:** Fully documented hardware (KiCad) and firmware (C/C++) to ensure long-term community maintenance.
 
-This list is a starting point, and I am eager to discuss these or any other mechanisms with an interested partner.
+### **Targeted Print Mechanisms (The "Wishlist")**
 
-### **What a Partnership Could Look Like**
+I am seeking a "Launch Vehicle" for this project. While my primary ambition is to support **Wide-Format (8-inch/A4)** printing, I am eager to collaborate with any partner offering 2, 3, or 4-inch mechanisms to get this project off the ground.
 
-I envision a straightforward and mutually beneficial collaboration. I will do the heavy lifting in terms of design, documentation, and community engagement. From a manufacturing partner, the ask is minimal:
+**Tier 1: Wide-Format (The "Dream" Target)**
+*An open-source controller for these mechanisms would be a market-first innovation.*
 
-*   **Technical Documentation:** Access to the necessary datasheets, pinouts, and command protocols.
-*   **Engineering Samples:** Just **one or two** print mechanisms for the entire development cycle.
-*   **A Point of Contact:** Occasional access to a technical contact for clarifying critical questions.
+| Manufacturer | Model Series | Size | Why this is a top priority |
+| :--- | :--- | :--- | :--- |
+| **Fujitsu** | **FTP-68EMCL Series** | **8-inch (A4)** | **Top Choice.** Enables compact medical/kiosk printing. A massive gap in the maker market. |
+| **Fujitsu** | **FTP-68E (General)** | **8-inch (A4)** | Any variation of the 8-inch form factor is highly desirable. |
 
-In return, I will deliver a fully open-source, production-ready controller board, complete with schematics, board files, firmware, and comprehensive documentation.
+**Tier 2: Standard Widths (High-Volume Targets)**
+*These mechanisms are industry standards and would see immediate, widespread adoption in the hobbyist community.*
 
-### **Project Roadmap**
+| Manufacturer | Model Series | Size | Description |
+| :--- | :--- | :--- | :--- |
+| **Fujitsu** | **FTP-638MCL Series** | **3-inch** | High-speed, standard width. Ideal for POS prototyping. |
+| **SII (Seiko)** | **CAPD247 / CAPD347** | **2-inch / 3-inch** | Extremely reliable mechanisms with auto-cutter options. |
+| **PRT** | **PT2161P / PT1563P** | **2-inch** | Cost-effective options that lower the barrier to entry. |
+| **Any** | **Compatible Models** | **Any** | I am open to proposals for *any* robust mechanism with available documentation. |
 
-*   **Phase 1: Partnership and Prototyping (1-2 Months):** Finalize a partnership, receive samples, and develop the initial hardware prototype and core firmware.
-*   **Phase 2: Alpha Testing and Refinement (2-3 Months):** Rigorously test the hardware and software, refine the PCB design, and develop a stable firmware library.
-*   **Phase 3: Public Release and Documentation (1 Month):** Launch the project publicly with comprehensive documentation, usage guides, and design files. I will lead all community engagement post-launch.
+### **What a Partnership Looks Like**
+
+I envision a straightforward collaboration where I handle the heavy lifting of design and community management. I have no intention of manufacturing or selling these boards myself; my goal is purely to provide the design files to the community.
+
+**What I Need from You:**
+1.  **Authorization:** A formal agreement to publish an open-source hardware design and firmware driver compatible with your mechanism.
+2.  **Technical Documentation:** Access to datasheets, timing diagrams, and command protocols.
+3.  **Engineering Samples:** Provision of **1-2 units** of the target mechanism (and associated platen rollers/connectors) for development.
+
+**What You Get:**
+1.  **Zero Cost R&D:** A complete controller design developed at no cost to you.
+2.  **New Markets:** A lowered barrier to entry for hobbyists, students, and startups to buy your hardware.
+3.  **Community Support:** I will serve as the primary maintainer, directing technical questions to the GitHub repository rather than your support team.
 
 ### **Respect for Intellectual Property**
 
-I want to be unequivocally clear: this project is intended to be a partnership that plays by the rules. **The IP possessed by a partner company must and will be held above everything else.** This is precisely why I am publicly asking for an official collaboration. My goal is to work *with* a manufacturer to create an authorized, open-source controller, ensuring that all proprietary information is protected.
+**The IP possessed by a partner company must and will be held above everything else.**
 
-### **My Commitment to Community and Support**
+My goal is to create an *authorized* open-source controller. I will strictly adhere to guidelines regarding what data can be made public (e.g., the board schematics and firmware driver) versus what must remain confidential (e.g., internal proprietary manufacturing data of the head itself).
 
-This collaboration will not create a support burden for your company. All inquiries from the maker community will be directed to me and managed through the project's GitHub Issues tracker and by email. I am committed to actively monitoring these channels and addressing valid issues through planned hardware and firmware revisions, ensuring the long-term health of the project.
+### **Development Roadmap**
 
-### **Commitment to an Accessible Open-Source Workflow**
+*   **Phase 1: Partnership & Prototyping:** Finalize mechanism selection, receive samples, and begin hardware design in KiCad.
+*   **Phase 2: Firmware Development:** Develop the STM32 HAL/LL driver to handle motor stepping, thermal strobe timing, and USB data buffering.
+*   **Phase 3: Public Release:** Publish the repository with a comprehensive "Getting Started" guide, BOM, and assembly instructions.
 
-To ensure that anyone can contribute without financial barriers, the entire development will be done using free and open-source tools:
-*   **PCB Design:** **KiCad**
-*   **3D Modeling:** **Autodesk Fusion 3** (Free for hobbyist use)
-*   **Firmware Development:** **STM32CubeIDE**
-*   **Software Development:** **Visual Studio Community**
+### **Toolchain & Licensing Plan**
 
-### **Licensing Plan**
-*   **Hardware:** CERN Open Hardware Licence v2.0 (Permissive)
-*   **Firmware:** MIT License
-*   **Software (including PDF Library):** GNU General Public License v3.0 or later
-
-These licenses are widely trusted and the permissive hardware/firmware licenses are chosen to maximize adoption.
-
-### **The Art and Science of Thermal Printing**
-
-For me, thermal printing is a masterclass in electromechanical elegance. It begins with the clean, architectural lines of the machine at rest. The process engages with a crisp pulse of light and the confident, calibrated hum of a motor pulling the media into place.
-
-What follows is an act of perfect linear precision. The paper glides swiftly across the stationary print head—a solid-state array of hundreds of individual thermal points. This head doesn't move, but it ignites with data. It strobes with microscopic accuracy, applying targeted heat that brings the image to life on the reactive surface. The sound it produces is the voice of data itself: a digital chatter whose pitch and cadence shift in real-time with the density of the print.
-
-The final product emerges, a tangible artifact still warm with the energy of its own creation. This is the experience I want to share—the power to give a purely digital concept a physical form.
+*   **PCB Design:** KiCad (Open Source)
+*   **Firmware:** STM32CubeIDE (Free)
+*   **Hardware License:** CERN Open Hardware Licence v2.0 (Permissive)
+*   **Firmware License:** MIT License
 
 ### **Let's Build the Future of Printing, Together**
 
-If you or your company are inspired by this vision, your participation would be an invaluable contribution to the entire open-source community. Let us work together to create a tool that will empower countless individuals to bring their ideas to life.
+If you represent a manufacturer—whether you make 2-inch receipt mechanisms or 8-inch document printers—I want to talk to you. Your hardware combined with open-source accessibility is a winning strategy.
+
+**Contact Information:**
+For partnership inquiries, please open an issue in this repository or contact me directly at: **hamslices47@gmail.com**
 
 ---
 
-### **Contact Information**
+### **The Art and Science of Thermal Printing**
 
-For partnership inquiries or to discuss this proposal further, please feel free to open an issue in this repository or contact me directly via email at: **[hamslices47@gmail.com]**
+Thermal printing is a masterclass in reductive design. It removes the friction of ink, cartridges, and drying time, leaving only the essentials: heat and movement.
+
+It is the most direct translation of digital logic into physical form. A static array of thermal elements strobes with microscopic precision against moving media, rendering code into a tangible artifact instantly. There is no interface more immediate, and no mechanism more honest in its function.
 
 ---
 
 ### **A Note to the Community**
 
-If you are a maker, developer, or hobbyist who believes in this project, please **"star" this repository!** A strong show of community interest will be a powerful signal to potential manufacturing partners that a vibrant market is waiting for this collaboration.
+If you are a maker, developer, or hobbyist who wants to see this project exist, please **"star" this repository!** A strong show of community interest will be a powerful signal to potential manufacturing partners that a vibrant market is waiting for this collaboration.
